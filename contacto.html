@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesweb.css">
+    <title>Mi Página Web</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Página Web</h1>
+        <h4>Oihan Tumas Hernandez</h4>
+    </header>
+    <nav>
+        <a href="index.html">Acerca de mí</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <section id="contacto" class="contacto">
+        <h2>Contacto:</h2>
+    <p>Rellena el siguiente formulario para ponerte en contacto conmigo.</p>
+    <form action="server.php" method="get">
+      <fieldset>
+        <legend>Datos</legend>
+        <label for="id-nombre">Nombre: </label>
+        <input type="text" name="nombre" id="id-nombre">
+        <br><br>
+        <label for="id-email">Email: </label>
+        <input type="email" name="email" id="id-email">
+      </fieldset>
+      <fieldset>
+        <legend>Mensaje</legend>
+        <label for="id-motivo">Motivo </label>
+        <select id="id-motivo" name="motivo">
+          <option selected>Mensaje</option>
+          <option>Información</option>
+          <option>Opinión</option>
+        </select>
+        <br><br>
+        <textarea name="mensaje" rows="5" cols="25" placeholder="Escribe aquí"></textarea>
+      </fieldset>
+      <br>
+      <input type="checkbox" name="condiciones" id="id-condiciones" value="1">
+      <label for="id-condiciones">Acepto las condiciones</label>
+      <br><br>
+      <input type="submit" name="enviar" value="Enviar">
+    </form>
+    </section>
+    <footer>
+        <p>Oihan Tumas Hernandez - Mi Página Web</p>
+    </footer>
+</body>
+</html>
